@@ -3,6 +3,7 @@ import PostModal from "@/components/common/PostModal";
 import Header from "@/components/layout/Header";
 import { PostData, PostProps } from "@/interfaces";
 import { useState } from "react";
+import React from "react";
 
 const Posts: React.FC<PostProps[]> = ({ posts } :{
     posts: PostProps[];
