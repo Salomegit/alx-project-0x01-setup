@@ -5,9 +5,11 @@ import { PostData, PostProps } from "@/interfaces";
 import { useState } from "react";
 import React from "react";
 
-const Posts: React.FC<PostProps[]> = ({ posts } :{
-    posts: PostProps[];
-}) => {
+interface PostsPRopsInterface {
+    posts: PostProps[]; // Corrected pro
+}
+
+const Posts: React.FC<PostsPRopsInterface> = ({ posts } ) => {
   const [isModalOpen, setModalOpen] = useState(false);
   const [post, setPost] = useState<PostData | null>(null);
 
